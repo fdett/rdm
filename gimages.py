@@ -1,3 +1,6 @@
+# http://stackoverflow.com/questions/11242967/python-search-with-image-google-images?lq=1
+# Jaime Ivan Cervantes
+
 import os
 import sys
 import time
