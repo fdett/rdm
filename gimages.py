@@ -7,12 +7,13 @@ import time
 from urllib import FancyURLopener
 import urllib2
 import simplejson
+import urllib
 
 # Define search term
 searchTerm = "hello world"
 
 # Replace spaces ' ' in search term for '%20' in order to comply with request
-searchTerm = searchTerm.replace(' ','%20')
+searchTerm = urllib.quote(searchTerm, '')
 
 
 # Start FancyURLopener with defined version 
