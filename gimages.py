@@ -40,7 +40,10 @@ for i in range(0,10):
         count = count + 1
         print myUrl['unescapedUrl']
 
-        myopener.retrieve(myUrl['unescapedUrl'],str(count)+'.jpg')
+        try:
+            myopener.retrieve(myUrl['unescapedUrl'],str(count)+'.jpg')
+        except:
+            print 'ERROR: ' + pk + '-' + str(count)
 
     # Sleep for one second to prevent IP blocking from Google
     time.sleep(1)
